@@ -72,14 +72,14 @@ namespace SantaIsComing
         {
             if (e.KeyCode == Keys.Space)
             {
-                gravity = -15;
+                gravity = -9;
             }
         }
         private void Form1_KeyUp(object sender, KeyEventArgs e)
          {
             if (e.KeyCode == Keys.Space)
             {
-                gravity = +10;
+                gravity = +9   ;
             }
          }
         private void Bird_Click(object sender, EventArgs e)
@@ -95,6 +95,7 @@ namespace SantaIsComing
         {
             timer1.Stop();
             ScoreLabel.Text = $"game over. Score {score}";
+            tryagain.Visible = true;
         }
 
         private void timer1_tick(object sender, EventArgs e)
@@ -102,7 +103,12 @@ namespace SantaIsComing
 
         }
 
-        
+        private void tryagain_Click(object sender, EventArgs e)
+        {
+            Form1 NewForm = new Form1();
+            NewForm.Show();
+            this.Dispose(false);
+        }
     }
 }
 

@@ -38,6 +38,7 @@
             this.ScoreLabel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.tryagain = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.topPipe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Bird)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Ground)).BeginInit();
@@ -124,12 +125,26 @@
             this.timer1.Interval = 20;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // tryagain
+            // 
+            this.tryagain.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.tryagain.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tryagain.Location = new System.Drawing.Point(257, 334);
+            this.tryagain.Name = "tryagain";
+            this.tryagain.Size = new System.Drawing.Size(309, 134);
+            this.tryagain.TabIndex = 7;
+            this.tryagain.Text = "haha u suck! again?";
+            this.tryagain.UseVisualStyleBackColor = true;
+            this.tryagain.Visible = false;
+            this.tryagain.Click += new System.EventHandler(this.tryagain_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(733, 894);
+            this.Controls.Add(this.tryagain);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.ScoreLabel);
             this.Controls.Add(this.pictureBox5);
@@ -163,6 +178,7 @@
         private System.Windows.Forms.Label ScoreLabel;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button tryagain;
     }
 }
 
